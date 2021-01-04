@@ -33,4 +33,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Deploying build
-        run: surge ./build --token {secrets.TOKEN}
+        run: surge ./build table-app.surge.sh --token {secrets.TOKEN}
