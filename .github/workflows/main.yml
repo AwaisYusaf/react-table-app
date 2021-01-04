@@ -29,12 +29,9 @@ jobs:
       - name: Installing yarn
         run: sudo npm install -g yarn
       - name: Creating Build.
-        run: npm build
+        run: yarn build
 
       # Runs a set of commands using the runners shell
       - name: Deploying build
-<<<<<<< HEAD
         run: surge ./build table-app.surge.sh --token ${{secrets.TOKEN}}
-=======
-        run: surge ./build table-app.surge.sh --token {secrets.TOKEN}
->>>>>>> ff2405880644b35cdd5208639c9bfe92aaac106f
+
