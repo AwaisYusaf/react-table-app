@@ -25,9 +25,9 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Installing surge
-        run: npm install -g surge
+        run: npm install surge
       - name: Installing yarn
-        run: npm install -g yarn
+        run: npm install yarn
       - name: Creating Build.
         run: yarn build
 
