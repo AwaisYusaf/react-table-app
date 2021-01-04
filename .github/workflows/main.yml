@@ -25,12 +25,12 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Installing surge
-        run: npm install surge
+        run: sudo npm install -g surge
       - name: Installing yarn
-        run: npm install yarn
+        run: sudo npm install -g yarn
       - name: Creating Build.
         run: yarn build
 
       # Runs a set of commands using the runners shell
       - name: Deploying build
-        run: surge ./build ac6706bcceae5e8529cfdfeac612bba1 --token {secrets.TOKEN}
+        run: surge ./build table-app.surge.sh --token ${{secrets.TOKEN}}
