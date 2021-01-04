@@ -25,7 +25,7 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Installing surge
-        run: npm install surge
+        run: sudo npm install -g surge
       - name: Installing yarn
         run: npm install yarn
       - name: Creating Build.
